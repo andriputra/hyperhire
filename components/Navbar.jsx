@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Image from 'next/image';
 
 const LanguageDropdown = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,7 +21,7 @@ const LanguageDropdown = () => {
         onClick={toggleDropdown}
         className="inline-flex justify-center items-center w-full shadow-sm px-4 py-2 bg-transparent text-sm font-medium text-gray-700 focus:outline-none "
       >
-        <img src='/img/globe.png' alt="language" className='w-[25px] h-[25px]' />
+        <Image src='/img/globe.png' alt="language" width={25} height={25} className='w-[25px] h-[25px]' />
         <svg className="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#ffffff" aria-hidden="true">
           <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
         </svg>
@@ -55,7 +56,7 @@ export default function Navbar() {
     <nav className="bg-blac">
       <div className="container mx-auto flex justify-between items-center p-6">
         <div className="text-white text-lg font-bold">
-          <img src="/img/logo.png" alt="Logo" className="" />
+          <Image src="/img/logo.png" alt="Logo" width={170} height={28} className="" />
         </div>
 
         {/* Hamburger Icon */}

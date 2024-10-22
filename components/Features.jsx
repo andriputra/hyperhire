@@ -36,7 +36,7 @@ export default function Features() {
       <p className="text-lg mt-6 text-gray-500">
         가격은 절반으로, 속도는 두배로, 품질은 A++!<br className="hidden sm:block"/>
         기업 홍보, 제품 소개, 교육 및 행사, 정보 및 안내 영상 등<br className="hidden sm:block"/>
-        당신이 필요한 '그 영상'을 플루닛 영상제작소에 맡겨주세요.
+        당신이 필요한 그 영상 을 플루닛 영상제작소에 맡겨주세요.
       </p>
       
       {/* Horizontal line */}

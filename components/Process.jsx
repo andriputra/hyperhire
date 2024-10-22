@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Process() {
   const steps = [
     {
@@ -79,10 +81,12 @@ export default function Process() {
                 <div key={index} className="flex flex-row lg:gap-2">
                   <div className="bg-custom-gradient rounded-[15px] w-[100px] h-[100px] md:w-[134px] md:h-[134px] flex items-center flex-col justify-center mr-4 mb-4">
                     <p className="text-sm md:text-md text-white-500 mb-2">STEP {index + 1}</p>
-                    <img 
+                    <Image 
                       src={index === 0 ? "/img/doc.png" : index === 1 ? "/img/cam.png" : "/img/vid.png"} 
                       alt={index === 0 ? "document" : index === 1 ? "camera" : "video"} 
                       className="opacity-[0.7]" 
+                      width={60} 
+                      height={50} 
                     />
                   </div>
                   <div className="md:ml-[20px] border-b border-b-[#FFFFFF26] flex flex-col justify-center w-auto flex-1">

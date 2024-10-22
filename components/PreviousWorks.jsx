@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 export default function PreviousWorks() {
   return (
@@ -7,8 +8,11 @@ export default function PreviousWorks() {
       </div>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4">
         {Array.from({ length: 12 }, (_, index) => (
-          <img
+          <Image
             key={index}
+            width={16}  
+            height={9} 
+            layout="responsive"
             src={`/img/work${index + 1}.png`}
             alt={`Work ${index + 1}`}
             className="w-full h-auto shadow-lg transition-transform transform hover:scale-105 hover:z-10 hover:rounded-md hover:shadow-lg"
